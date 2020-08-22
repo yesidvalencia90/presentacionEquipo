@@ -48,17 +48,17 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
+        android:id="@+id/saveForm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/sendForm"
+        android:onClick="saveForm"/>
+
+    <Button
         android:id="@+id/cancelButton"
         style="@style/Widget.AppCompat.Button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/cancelForm"
         android:onClick="cancelForm"/>
-
-    <Button
-        android:id="@+id/saveForm"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/sendForm"
-        android:onClick="saveForm"/>
 </LinearLayout>
