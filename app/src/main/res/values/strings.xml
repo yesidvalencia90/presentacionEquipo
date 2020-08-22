@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Presentacion Equipo</string>
+    <string name="title">Presentacion</string>
+    <string name="integrants">Integrantes</string>
+    <string name="form">Formulario</string>
+    <string name="age">Edad</string>
+    <string name="formName">Nombre</string>
+    <string name="formLastName">Apellido</string>
+    <string name="formPhoneNumber">Numero Telefonico</string>
+    <string name="date">Fecha de Nacimiento</string>
+    <string name="cancelForm">Cancelar</string>
+    <string name="sendForm">Guardar</string>
+</resources>
