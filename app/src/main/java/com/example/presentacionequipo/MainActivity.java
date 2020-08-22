@@ -32,4 +32,9 @@ public class MainActivity extends AppCompatActivity {
         Intent callAge = new Intent(this, AgeActivity.class);
         startActivity(callAge);
     }
+
+    public void showIntegrants(View view) {
+        Intent integrant = new Intent(this, IntegrantsActivity.class);
+        startActivity(integrant);
+    }
 }

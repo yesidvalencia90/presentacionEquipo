@@ -19,7 +19,8 @@
         android:id="@+id/btnIntegrants"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/integrants" />
+        android:text="@string/integrants"
+        android:onClick="showIntegrants"/>
 
     <Button
         android:id="@+id/btnAge"
