@@ -59,7 +59,7 @@ public class AgeActivity extends AppCompatActivity implements DatePickerDialog.O
     public void onDateSet(DatePicker datePicker, int year, int month, int day) {
         dateOfBrith.setVisibility(View.VISIBLE);
         String age = getAge(year, month, day);
-        dateOfBrith.setText("Tu fecha de nacimiento es: " + months[(month+1)] + " " + day + " del " + year);
+        dateOfBrith.setText("Tu fecha de nacimiento es: " + months[(month+1)] + " " + day + " del " + year );
         Toast.makeText(getApplicationContext(), "Tu edad es: " + age +" años", Toast.LENGTH_LONG).show();
     }
 
