@@ -3,10 +3,14 @@ package com.example.presentacionequipo;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.database.Cursor;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.os.Bundle;
+import android.util.Base64;
 import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -22,6 +26,7 @@ public class EditIntegrantActivity extends AppCompatActivity {
     private TextView selectedName;
     private TextView selectedIden;
     private TextView phoneSelected;
+    private ImageView imageView;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -32,6 +37,7 @@ public class EditIntegrantActivity extends AppCompatActivity {
         selectedName = findViewById(R.id.selectedName);
         selectedIden = findViewById(R.id.selectedIden);
         phoneSelected = findViewById(R.id.phoneSelected);
+        imageView = findViewById(R.id.profileImage);
 
         Intent getExtras = getIntent();
         selectedID = getExtras.getIntExtra("id", -1);
@@ -58,6 +64,9 @@ public class EditIntegrantActivity extends AppCompatActivity {
             selectedName.setVisibility(View.VISIBLE);
             selectedIden.setVisibility(View.VISIBLE);
             phoneSelected.setVisibility(View.VISIBLE);
+            Bitmap profileImage = stringToBitMap(integrant.getString(5));
+            Log.d(TAG, "Profile Picture: " + profileImage);
+            imageView.setImageBitmap(profileImage);
         }
     }
 
@@ -94,5 +103,17 @@ public class EditIntegrantActivity extends AppCompatActivity {
 
     private void toastMessage(String message){
         Toast.makeText(this, message, Toast.LENGTH_LONG).show();
+    }
+
+    public Bitmap stringToBitMap(String encodedString){
+        try{
+            byte [] encodeByte = Base64.decode(encodedString,Base64.DEFAULT);
+            Bitmap bitmap = BitmapFactory.decodeByteArray(encodeByte, 0, encodeByte.length);
+            return bitmap;
+        }
+        catch(Exception e){
+            e.getMessage();
+            return null;
+        }
     }
 }

@@ -28,4 +28,5 @@
     <string name="actualIntegrants">INTEGRANTES ACTUALES</string>
     <string name="calculateAge">CALCULA TU EDAD</string>
     <string name="personalInfo">INFORMACION PERSONAL</string>
+    <string name="selectImage">Selecciona Imagen de Perfil</string>
 </resources>

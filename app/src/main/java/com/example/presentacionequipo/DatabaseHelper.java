@@ -37,14 +37,14 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         onCreate(db);
     }
 
-    public boolean addData(String name, String lastName, String cc, String phone){
+    public boolean addData(String name, String lastName, String cc, String phone, String img){
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues contentValues = new ContentValues();
         contentValues.put(COL2, name);
         contentValues.put(COL3, lastName);
         contentValues.put(COL6, cc);
         contentValues.put(COL4, phone);
-        contentValues.put(COL5, "FOTO AQUI :)");
+        contentValues.put(COL5, img);
         Log.d(TAG, "addData: Adding " + name + "to " + TABLE_NAME);
         Long result = db.insert(TABLE_NAME, null, contentValues);
         if(result == -1){
