@@ -71,18 +71,19 @@ public class FormActivity extends AppCompatActivity {
             Boolean integrantExists = validateIdentification(insertCc);
             if(integrantExists == true){
                 toastMessage("Ya existe un Integrante con esta identificacion, por favor verifica los datos.");
+                cc.setText("");
                 cc.requestFocus();
-            }else{
+            }else {
                 addData(insertName, insertLastName, insertCc, insertPhone);
                 name.setText("");
-                name.requestFocus();
                 lastName.setText("");
+                cc.setText("");
                 phone.setText("");
+                name.requestFocus();
             }
-            cc.setText("");
-        }else{
+        }/*else{
             toastMessage("Algo salio mal, por favor intentalo de nuevo.");
-        }
+        }*/
     }
 
     private Boolean validateIdentification(String cc) {
