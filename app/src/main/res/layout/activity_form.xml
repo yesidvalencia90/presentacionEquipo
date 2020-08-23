@@ -7,6 +7,16 @@
     android:orientation="vertical"
     tools:context=".FormActivity">
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="28dp"
+        android:paddingBottom="15dp"
+        android:text="@string/formTitle"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textStyle="bold" />
+
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/nameLayout"
         android:layout_width="match_parent"
@@ -71,7 +81,7 @@
         style="@style/Widget.AppCompat.Button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/cancelForm"
-        android:onClick="cancelForm"/>
+        android:onClick="cancelForm"
+        android:text="@string/cancelForm" />
 
 </LinearLayout>

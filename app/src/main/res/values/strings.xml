@@ -23,4 +23,9 @@
     <string name="confirmDialogTitle">Eliminar Integrante:</string>
     <string name="confirmDelete">Continuar</string>
     <string name="cancelDelete">Cancelar</string>
+    <string name="mainMenuTitle">MENU PRINCIPAL</string>
+    <string name="formTitle">REGISTRATE COMO INTEGRANTE</string>
+    <string name="actualIntegrants">INTEGRANTES ACTUALES</string>
+    <string name="calculateAge">CALCULA TU EDAD</string>
+    <string name="personalInfo">INFORMACION PERSONAL</string>
 </resources>

@@ -7,26 +7,35 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="28dp"
+        android:text="@string/mainMenuTitle"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textStyle="bold" />
+
     <Button
         android:id="@+id/btnForm"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/form"
         android:layout_marginTop="10pt"
-        android:onClick="showForm"/>
+        android:onClick="showForm"
+        android:text="@string/form" />
 
     <Button
         android:id="@+id/btnIntegrants"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/integrants"
-        android:onClick="showIntegrants"/>
+        android:onClick="showIntegrants"
+        android:text="@string/integrants" />
 
     <Button
         android:id="@+id/btnAge"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/age"
-        android:onClick="showDatePicker"/>
+        android:onClick="showDatePicker"
+        android:text="@string/age" />
 
 </LinearLayout>

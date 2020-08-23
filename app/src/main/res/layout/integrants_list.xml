@@ -5,11 +5,20 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="28dp"
+        android:paddingBottom="28dp"
+        android:text="@string/actualIntegrants"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textStyle="bold" />
 
     <ListView
         android:id="@+id/integrantsList"
         android:layout_width="match_parent"
-        android:layout_height="556dp" />
+        android:layout_height="471dp" />
 
     <Button
         android:id="@+id/button2"
