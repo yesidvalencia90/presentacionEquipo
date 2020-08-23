@@ -65,4 +65,9 @@ public class IntegrantsActivity extends AppCompatActivity {
     private void toastMessage(String message) {
         Toast.makeText(this, message, Toast.LENGTH_SHORT).show();
     }
+
+    public void backToMain(View view) {
+        Intent backToMain = new Intent(this, MainActivity.class);
+        startActivity(backToMain);
+    }
 }

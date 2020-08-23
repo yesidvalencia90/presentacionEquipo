@@ -29,7 +29,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:onClick="backToIntegrats"
-            android:text="@string/bactToIntegrant" />
+            android:text= "@string/bactToIntegrant" />
 
     </LinearLayout>
 
@@ -43,7 +43,7 @@
         android:layout_marginRight="332dp"
         android:layout_marginBottom="542dp"
         android:textStyle="bold"
-        android:text="Nombre:"
+        android:text="@string/currentName"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
 
     <TextView
@@ -56,7 +56,7 @@
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginBottom="542dp"
-        android:text="selectedName"
+        android:text="@string/currentName"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         android:visibility="invisible" />
 
@@ -70,7 +70,7 @@
         android:layout_marginEnd="286dp"
         android:layout_marginRight="286dp"
         android:layout_marginBottom="511dp"
-        android:text="Identificacion:"
+        android:text="@string/currentID"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         android:textStyle="bold" />
 
@@ -84,7 +84,7 @@
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginBottom="511dp"
-        android:text="selectedIden"
+        android:text="@string/currentID"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         android:visibility="invisible" />
 
@@ -98,7 +98,7 @@
         android:layout_marginEnd="325dp"
         android:layout_marginRight="325dp"
         android:layout_marginBottom="478dp"
-        android:text="Telefono:"
+        android:text="@string/currentPhone"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         android:textStyle="bold" />
 
@@ -112,7 +112,7 @@
         android:layout_marginEnd="6dp"
         android:layout_marginRight="6dp"
         android:layout_marginBottom="479dp"
-        android:text="phoneSelected"
+        android:text="@string/currentPhone"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         android:visibility="invisible" />
 

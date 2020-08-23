@@ -7,8 +7,15 @@
 
 
     <ListView
+        android:id="@+id/integrantsList"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/integrantsList"/>
+        android:layout_height="556dp" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:text="@string/backToMain"
+        android:onClick="backToMain"/>
 
 </LinearLayout>

@@ -1,5 +1,6 @@
 package com.example.presentacionequipo;
 
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.database.Cursor;
 import android.os.Bundle;
@@ -10,6 +11,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.Nullable;
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class EditIntegrantActivity extends AppCompatActivity {
@@ -65,6 +67,29 @@ public class EditIntegrantActivity extends AppCompatActivity {
     }
 
     public void deleteIntegrant(View view) {
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setMessage(R.string.confirmDialogMessage)
+                .setTitle(R.string.confirmDialogTitle)
+                .setPositiveButton(R.string.confirmDelete, new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int id) {
+                        Log.d(TAG, "ID: " + selectedID);
+                        boolean deleted = mDatabaseHelper.deleteIntegrant(selectedID);
+                        if (deleted == true){
+                            toastMessage("El integrante fue eliminado correctamente.");
+                        }else{
+                            toastMessage("Hubo un error eliminando el integrante.");
+                        }
+                        Intent getBackToIntegrants = new Intent(EditIntegrantActivity.this, IntegrantsActivity.class);
+                        startActivity(getBackToIntegrants);
+                    }
+                })
+                .setNegativeButton(R.string.cancelDelete, new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int id) {
+                        // CANCEL
+                    }
+                });
+        // Create the AlertDialog object and return it
+        builder.create().show();
     }
 
     private void toastMessage(String message){

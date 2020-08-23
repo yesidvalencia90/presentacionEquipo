@@ -3,7 +3,7 @@
     <string name="title">Presentacion</string>
     <string name="integrants">Integrantes</string>
     <string name="form">Formulario</string>
-    <string name="age">Edad</string>
+    <string name="age">Calcular Edad</string>
     <string name="formName">Nombre</string>
     <string name="formLastName">Apellido</string>
     <string name="formPhoneNumber">Numero Telefonico</string>
@@ -12,5 +12,15 @@
     <string name="sendForm">Guardar</string>
     <string name="formCc">Identificacion</string>
     <string name="deleteIntegrant">Eliminar Integrante</string>
-    <string name="bactToIntegrant">Volver</string>
+    <string name="bactToIntegrant">Volver a Integrantes</string>
+    <string name="backToMain">Volver al Menu Principal</string>
+    <string name="selectDateOfBirth">Selecciona tu Fecha de Nacimiento</string>
+    <string name="dateOfBirth">Fecha de Nacimiento</string>
+    <string name="currentName">Nombre:</string>
+    <string name="currentID">Identificacion:</string>
+    <string name="currentPhone">Telefono:</string>
+    <string name="confirmDialogMessage">Estas seguro que deseas eliminar este integrante?</string>
+    <string name="confirmDialogTitle">Eliminar Integrante:</string>
+    <string name="confirmDelete">Continuar</string>
+    <string name="cancelDelete">Cancelar</string>
 </resources>

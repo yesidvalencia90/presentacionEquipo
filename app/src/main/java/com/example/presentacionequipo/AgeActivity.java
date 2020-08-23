@@ -4,6 +4,7 @@ import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.DatePickerDialog;
+import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
@@ -75,5 +76,10 @@ public class AgeActivity extends AppCompatActivity implements DatePickerDialog.O
         Integer ageInt = new Integer(age);
         String currentAge = ageInt.toString();
         return currentAge;
+    }
+
+    public void backToMain(View view) {
+        Intent backToMain = new Intent(this, MainActivity.class);
+        startActivity(backToMain);
     }
 }
