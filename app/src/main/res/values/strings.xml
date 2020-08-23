@@ -10,4 +10,7 @@
     <string name="date">Fecha de Nacimiento</string>
     <string name="cancelForm">Cancelar</string>
     <string name="sendForm">Guardar</string>
+    <string name="formCc">Identificacion</string>
+    <string name="deleteIntegrant">Eliminar Integrante</string>
+    <string name="bactToIntegrant">Volver</string>
 </resources>
